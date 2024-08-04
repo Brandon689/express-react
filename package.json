@@ -1,0 +1,25 @@
+{
+  "name": "my-express-react-app",
+  "version": "1.0.0",
+  "main": "index.js",
+"scripts": {
+  "start": "node server/server.js",
+  "server": "nodemon server/server.js",
+  "client": "cd client && npm run dev",
+  "dev": "concurrently \"npm run server\" \"npm run client\"",
+  "build": "cd client && npm run build",
+  "prod": "NODE_ENV=production node server/server.js"
+}
+,
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.4"
+  }
+}
